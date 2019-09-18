@@ -1,0 +1,16 @@
+<%= form_with(model: @blog, local: true) do |form| %>
+  <div class="blog_title">
+    <%= form.label :Name %><br>
+    <%= form.text_field :Name %>
+  </div>
+
+  <div class="blog_content">
+    <%= form.label :Email %><br>
+    <%= form.text_field :Email %>
+  </div>
+  <div class="blog_content">
+    <%= form.label :Content %><br>
+    <%= form.text_field :Content %>
+  </div>
+  <%= form.submit "CREATE CONTACT" %>
+<% end %>
